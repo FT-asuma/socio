@@ -1,0 +1,122 @@
+.login
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 100vw
+    height: 100vh
+    background-color: var(--background)
+    color: var(--text-primary)
+
+.content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100%
+    height: 100%
+
+    .leftSide
+        width: 70%
+        background-color: var(--overlay)
+        color: var(--text-on-primary)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        text-align: center
+        padding: 2rem
+        height: 100%
+    h1
+        font-size: 2rem
+        margin-bottom: 1rem
+    p
+        font-size: 1.2rem
+
+    .rightSideLogin
+        width: 30%
+        height: 100%
+        background-color: var(--surface)
+        color: var(--text-primary)
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        padding: 2rem
+    h2
+        font-size: 1.5rem
+        margin-bottom: 1rem
+
+    .loginForm
+        display: flex
+        flex-direction: column
+        width: 100%
+        max-width: 300px
+
+    .inputField
+        margin-bottom: 1rem
+        padding: 0.8rem
+        font-size: 1rem
+        border: 1px solid #ccc
+        border-radius: 4px
+        width: 100%
+        box-sizing: border-box
+        color: #121212
+        &:focus
+            border-color: var(--primary)
+            outline: none
+
+    .submitButton
+        padding: 0.8rem
+        font-size: 1rem
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        width: 100%
+        max-width: 300px
+        background-color: var(--primary-hover)
+        color: var(--text-on-primary)
+        text-align: center
+        transition: 0.3s ease
+        &:hover
+            opacity: 0.8
+    .orText
+        margin: 1rem 0
+        width: 100%
+        text-align: center
+        font-size: 1rem
+        color: var(--text-secondary)
+
+    .googleButton, .githubButton
+        margin-bottom: 1rem
+        padding: 0.8rem
+        font-size: 1rem
+        border: none
+        border-radius: 4px
+        cursor: pointer
+        width: 100%
+        max-width: 300px
+        display: flex
+        justify-content: center
+        align-items: center
+        color: white
+        gap: 0.5rem
+        text-align: center
+
+    .googleButton
+        background-color: #ea4335
+        &:hover
+            background-color: #c93127
+
+    .githubButton
+        background-color: #333333
+        &:hover
+            background-color: #222222
+    .registerPrompt
+        margin-top: 3rem
+        font-size: 1rem
+        color: var(--text-secondary)
+
+    .registerLink
+        color: var(--primary)
+        text-decoration: none
+        &:hover
+            text-decoration: underline
